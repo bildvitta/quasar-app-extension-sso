@@ -1,44 +1,17 @@
-/**
- * Quasar App Extension prompts script
- *
- * Docs: https://quasar.dev/app-extensions/development-guide/prompts-api
- *
- * Inquirer prompts
- * (answers are available as "api.prompts" in the other scripts)
- * https://www.npmjs.com/package/inquirer#question
- *
- * Example:
-
+module.exports = function () {
   return [
     {
-      name: 'name',
-      type: 'string',
+      default: 'http://localhost:8000',
+      message: 'Qual o endereço base da API em modo de desenvolvimento?',
+      name: 'serverBaseURL',
       required: true,
-      message: 'Quasar CLI Extension name (without prefix)',
+      type: 'input',
     },
     {
-      name: 'preset',
-      type: 'checkbox',
-      message: 'Check the features needed for your project:',
-      choices: [
-        {
-          name: 'Install script',
-          value: 'install'
-        },
-        {
-          name: 'Prompts script',
-          value: 'prompts'
-        },
-        {
-          name: 'Uninstall script',
-          value: 'uninstall'
-        }
-      ]
+      message: 'Qual o endereço dos "assets"?',
+      name: 'bucketURL',
+      required: true,
+      type: 'input'
     }
   ]
-
- */
-
-module.exports = function () {
-  return []
 }
