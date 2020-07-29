@@ -1,7 +1,7 @@
 module.exports = function () {
   return [
     {
-      default: 'http://localhost:8000',
+      default: 'http://localhost:3000',
       message: 'Qual o endereço base da API em modo de desenvolvimento?',
       name: 'serverBaseURL',
       required: true,

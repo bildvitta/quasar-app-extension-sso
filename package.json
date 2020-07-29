@@ -9,7 +9,8 @@
     "vuex",
     "axios",
     "quasar-extension",
-    "sso"
+    "sso",
+    "active directory"
   ],
   "main": "src/index.js",
   "scripts": {
@@ -19,15 +20,15 @@
     "type": "git",
     "url": ""
   },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.com/"
+  },
   "bugs": "",
   "homepage": "",
   "engines": {
     "node": ">= 8.9.0",
     "npm": ">= 5.6.0",
     "yarn": ">= 1.6.0"
-  },
-  "dependencies": {
-    "axios": "^0.19.2",
-    "humps": "^2.0.1"
   }
 }

@@ -1,32 +1,21 @@
-Quasar App Extension Title <- change name
+Quasar App Extension SSO
 ===
-
-_Be sure to change this readme as appropriate for your app extension._
-
-_Think about the organization of this file and how the information will be beneficial to the user._
-
-> Add a short description of your App Extension. What does it do? How is it beneficial? Why would someone want to use it?
+Extensão para autenticação. Obs: O retorno da API necessita retornar no padrão **camelCase**, caso a API não retorne nesse padrão utilize a biblioteca [humps](https://www.npmjs.com/package/humps).
 
 # Install
 ```bash
-quasar ext add my-ext <- change name
+quasar ext add @bildvitta/sso
 ```
-Quasar CLI will retrieve it from NPM and install the extension.
 
 ## Prompts
 
-> If your app extension uses prompts, explain them here, otherwise remove this section.
+| Nome | Obrigatório? | Descrição | Padrão |
+| ------------ | ------------ | ------------ | ------------ |
+| serverBaseURL | Sim. | Endereço base da API em modo de desenvolvimento. | http://localhost:3000 |
+| bucketURL | Sim. | Diretório de arquivos na nuvem, endereço dos "assets". | ... |
+
 
 # Uninstall
 ```bash
-quasar ext remove my-ext <- change name
+quasar ext remove @bildvitta/sso
 ```
-
-# Info
-> Add longer information here that will help the user of your app extension.
-
-# Other Info
-> Add other information that's not as important to know
-
-# Donate
-If you appreciate the work that went into this App Extension, please consider [donating to Quasar](https://donate.quasar.dev).
