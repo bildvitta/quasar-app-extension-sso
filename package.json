@@ -1,6 +1,6 @@
 {
   "name": "@bildvitta/quasar-app-extension-sso",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A Quasar App Extension for sso",
   "author": "Bild & Vitta",
   "license": "MIT",
